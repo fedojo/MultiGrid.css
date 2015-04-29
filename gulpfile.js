@@ -1,7 +1,7 @@
-var gulp = require('gulp');
-var sass = require('gulp-sass');
-var jade = require('gulp-jade');
- 
+var gulp = require('gulp'),
+  sass = require('gulp-sass'),
+  jade = require('gulp-jade'),
+  server = require('gulp-server-livereload'); 
 
 
 var paths = {
@@ -23,6 +23,16 @@ gulp.task('sass', function() {
         .pipe(gulp.dest('./dist/css'));
 });
 
+
+// gulp.task('webserver', function() {
+//   gulp.src('app')
+//     .pipe(server({
+//       livereload: true,
+//       directoryListing: true,
+//       open: true,
+//       port: 8888
+//     }));
+// });
 
 gulp.task('jade', function() {
   var YOUR_LOCALS = {};
