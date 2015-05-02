@@ -10,32 +10,7 @@ body
 		height: 0
 		clear: both
 
-
-.large-1of2,
-
-.large-1of3,
-.large-2of3,
-
-.large-1of4,
-.large-3of4,
-
-.large-1of5,
-.large-2of5,
-.large-3of5,
-.large-4of5,
-
-.large-1of6,
-
-.large-1of7,
-
-.large-1of8,
-.large-3of8,
-.large-5of8,
-.large-7of8,
-
-.large-1of9,
-
-.large-1of10
+[class|="large"]
 	box-sizing: border-box
 	padding:
 		left: $gridGutterLarge/2
@@ -72,6 +47,8 @@ body
 .large-1of2
 	width: 50%
 
+.offset-large-1of2
+	margin-left: 50%
 
 // n of 3
 .large-1of3
@@ -80,26 +57,58 @@ body
 .large-2of3
 	width: percentage(2/3)
 
+
+.offset-large-1of3
+	margin-left: percentage(1/3)
+
+.offset-large-2of3
+	margin-left: percentage(2/3)
+
+
 // n of 4
 .large-1of4 
 	width: 25%
 
+.large-2of4
+	width: 50%
+
 .large-3of4 
 	width: 75%
+
+.offset-large-1of4
+	margin-left: percentage(1/4)
+
+.offset-large-2of4
+	margin-left: percentage(2/4)
+
+.offset-large-3of4
+	margin-left: percentage(3/4)
 
 
 // n of 5
 .large-1of5 
-	width: 20%
+	width: percentage(1/5)
 
 .large-2of5 
-	width: 40%
+	width: percentage(2/5)
 
 .large-3of5 
-	width: 60%
+	width: percentage(3/5)
 
 .large-4of5 
-	width: 80%
+	width: percentage(4/5)
+
+.offset-large-1of5 
+	margin-left: percentage(1/5)
+
+.offset-large-2of5 
+	margin-left: percentage(2/5)
+
+.offset-large-3of5 
+	margin-left: percentage(3/5)
+
+.offset-large-4of5 
+	margin-left: percentage(4/5)
 
 
 // n of 6
@@ -117,6 +126,21 @@ body
 
 .large-5of6
 	width: percentage(5/6)
+
+.offset-large-1of6
+	margin-left: percentage(1/6)
+
+.offset-large-2of6
+	margin-left: percentage(2/6)
+
+.offset-large-3of6
+	margin-left: percentage(3/6)
+
+.offset-large-4of6
+	margin-left: percentage(4/6)
+
+.offset-large-5of6
+	margin-left: percentage(5/6)
 
 
 // n of 7
@@ -139,27 +163,68 @@ body
 	width: percentage(6/7)
 
 
+.offset-large-1of7
+	margin-left: percentage(1/7)
+
+.offset-large-2of7
+	margin-left: percentage(2/7)
+
+.offset-large-3of7
+	margin-left: percentage(3/7)
+
+.offset-large-4of7
+	margin-left: percentage(4/7)
+
+.offset-large-5of7
+	margin-left: percentage(5/7)
+
+.offset-large-6of7
+	margin-left: percentage(6/7)
+
+
+
 // n of 8
 .large-1of8 
-	width: 12.5%
+	width: percentage(1/8) //12.5%
 
 .large-2of8 
-	width: 25%
+	width: percentage(2/8) //25%
 	
 .large-3of8 
-	width: 37.5%
+	width: percentage(3/8) //37.5%
 
 .large-4of8 
-	width: 50%
+	width: percentage(4/8) //50%
 
 .large-5of8 
-	width: 62.5%
+	width: percentage(5/8) //62.5%
 
 .large-6of8 
-	width: 75%
+	width: percentage(6/8) //75%
 
 .large-7of8 
-	width: 87.5%
+	width: percentage(7/8) //87.5%
+
+.offset-large-1of8 
+	margin-left: percentage(1/8) //12.5%
+
+.offset-large-2of8 
+	margin-left: percentage(2/8) //25%
+	
+.offset-large-3of8 
+	margin-left: percentage(3/8) //37.5%
+
+.offset-large-4of8 
+	margin-left: percentage(4/8) //50%
+
+.offset-large-5of8 
+	margin-left: percentage(5/8) //62.5%
+
+.offset-large-6of8 
+	margin-left: percentage(6/8) //75%
+
+.offset-large-7of8 
+	margin-left: percentage(7/8) //87.5%
 
 
 
@@ -185,8 +250,33 @@ body
 .large-7of9
 	width: percentage(7/9)
 
-.large-2of9
-	width: percentage(1/9)
+.large-8of9
+	width: percentage(8/9)
+
+.offset-large-1of9
+	margin-left: percentage(1/9)
+
+.offset-large-2of9
+	margin-left: percentage(2/9)
+
+.offset-large-3of9
+	margin-left: percentage(3/9)
+
+.offset-large-4of9
+	margin-left: percentage(4/9)
+
+.offset-large-5of9
+	margin-left: percentage(5/9)
+
+.offset-large-6of9
+	margin-left: percentage(6/9)
+
+.offset-large-7of9
+	margin-left: percentage(7/9)
+
+.offset-large-8of9
+	margin-left: percentage(8/9)
+
 
 // n of 10
 .large-1of10

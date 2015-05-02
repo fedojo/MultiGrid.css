@@ -1,54 +1,97 @@
 .debug
-	.large-1of2,
+	.row:nth-child(1n)
+		[class|="large"],
+		[class|="medium"],
+		[class|="small"]
+			// For dev only
+			border:
+				right: 1px solid #000
+			padding:
+				top: 10px
+				bottom: 10px
 
-	.large-1of3,
-	.large-2of3,
+			&:nth-child(1n)
+				background: #476565
 
-	.large-1of4,
-	.large-3of4,
+			&:nth-child(2n)
+				background: #5f7e79 
 
-	.large-1of5,
-	.large-2of5,
-	.large-3of5,
-	.large-4of5,
+			&:nth-child(3n)
+				background: #84a3a5
 
-	.large-1of6,
+			&:nth-child(4n)
+				background: #7dc3c3 
 
-	.large-1of7,
+			&:nth-child(5n)
+				background: #c7e1d4 
+				
+			&:nth-child(6n)
+				background: #3cd2d3 
 
-	.large-1of8,
-	.large-3of8,
-	.large-5of8,
-	.large-7of8,
-
-	.large-1of9,
-
-	.large-1of10
-		// For dev only
-		border:
-			right: 1px solid #000
-		padding:
-			top: 10px
-			bottom: 10px
-
-		&:nth-child(1n)
-			background: #476565
-
-		&:nth-child(2n)
-			background: #5f7e79 
-
-		&:nth-child(3n)
-			background: #84a3a5
-
-		&:nth-child(4n)
-			background: #7dc3c3 
-
-		&:nth-child(5n)
-			background: #c7e1d4 
-			
-		&:nth-child(6n)
-			background: #3cd2d3 
+		p
+			background: #fff
 
 
-	p
-		background: #fff
+	.row:nth-child(2n)
+		[class|="large"],
+		[class|="medium"],
+		[class|="small"]
+			// For dev only
+			border:
+				right: 1px solid #000
+			padding:
+				top: 10px
+				bottom: 10px
+
+			&:nth-child(1n)
+				background: #ba3725
+
+			&:nth-child(2n)
+				background: #bf3d27 
+
+			&:nth-child(3n)
+				background: #f68817
+
+			&:nth-child(4n)
+				background: #f6c82c 
+
+			&:nth-child(5n)
+				background: #ffe434 
+				
+			&:nth-child(6n)
+				background: #dbdaa1 
+
+		p
+			background: #fff
+
+	.row:nth-child(3n)
+		[class|="large"],
+		[class|="medium"],
+		[class|="small"]
+			// For dev only
+			border:
+				right: 1px solid #000
+			padding:
+				top: 10px
+				bottom: 10px
+
+			&:nth-child(1n)
+				background: #476565
+
+			&:nth-child(2n)
+				background: #5f7e79 
+
+			&:nth-child(3n)
+				background: #84a3a5
+
+			&:nth-child(4n)
+				background: #7dc3c3 
+
+			&:nth-child(5n)
+				background: #c7e1d4 
+				
+			&:nth-child(6n)
+				background: #3cd2d3 
+
+		p
+			background: #fff
