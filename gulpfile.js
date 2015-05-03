@@ -19,7 +19,9 @@ gulp.task('watch', function() {
 gulp.task('sass', function() {
     gulp
     	.src('./src/sass/*.scss')
-    	.pipe(sass())
+    	.pipe(sass({
+        includePaths: ['bower_components/breakpoint-sass/stylesheets']
+      }))
         .pipe(gulp.dest('./dist/css'));
 });
 

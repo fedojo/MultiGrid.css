@@ -1,11 +1,55 @@
-@mixin grid-column()
-	
+=buildGrid($divider)
+	@for $variable from 1 through ($divider)
+		.small-#{$variable}of#{$divider}
+			width: percentage($variable/$divider)
 
-@mixin grid-classes($size)
-	@for $i from 0 through $total-columns - 1
-	    .#{$size}-push-#{$i} 
-	      @include grid-column($push:$i, $collapse:null, $float:false)
+			@include breakpoint($mqSmall)
+				width: percentage($variable/$divider)
 
-	    .#{$size}-pull-#{$i} 
-	      @include grid-column($pull:$i, $collapse:null, $float:false)
+			@include breakpoint($mqMedium)
+				width: percentage($variable/$divider)
 
+		.offset-small-#{$variable}of#{$divider}
+			margin-left: percentage($variable/$divider)
+
+			@include breakpoint($mqSmall)
+				margin-left: percentage($variable/$divider)
+
+			@include breakpoint($mqMedium)
+				margin-left: percentage($variable/$divider)
+
+		.medium-#{$variable}of#{$divider}
+			width: percentage($variable/$divider)
+
+			@include breakpoint($mqSmall)
+				width: 100%
+
+			@include breakpoint($mqMedium)
+				width: percentage($variable/$divider)
+
+		.offset-medium-#{$variable}of#{$divider}
+			margin-left: percentage($variable/$divider)
+
+			@include breakpoint($mqSmall)
+				margin-left: 0
+
+			@include breakpoint($mqMedium)
+				margin-left: percentage($variable/$divider)
+
+		.large-#{$variable}of#{$divider}
+			width: percentage($variable/$divider)
+
+			@include breakpoint($mqSmall)
+				width: 100%
+
+			@include breakpoint($mqMedium)
+				width: 100%
+
+		.offset-large-#{$variable}of#{$divider}
+			margin-left: percentage($variable/$divider)
+
+			@include breakpoint($mqSmall)
+				margin-left: 0
+
+			@include breakpoint($mqMedium)
+				margin-left: 0

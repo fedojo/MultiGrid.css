@@ -1,0 +1,19 @@
+{
+  "name": "MultiGrid.css",
+  "version": "0.0.3",
+  "homepage": "https://github.com/fedojo/MultiGrid.css",
+  "authors": [
+    "piotrsikora <fedojo.com@gmail.com>"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "breakpoint-sass": "~2.5.0"
+  }
+}
