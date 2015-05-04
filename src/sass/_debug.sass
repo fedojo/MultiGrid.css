@@ -1,6 +1,59 @@
+@import url(http://fonts.googleapis.com/css?family=Roboto:400,300,100,500,700)
+
+body
+	
+	font:
+		weight: 100
+		family: 'Roboto', sans-serif
+		size: 10px
+	text-align: center
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6
+	font:
+		weight: 100
+		family: 'Roboto', sans-serif
+	text-align: center
+
+
+header
+	padding:
+		top: 10%
+		bottom: 10%
+	background: #f68817
+
+	h1
+		font:
+			size: 80px
+			weight: 400
+		color: #fff
+		margin:
+			bottom: 0
+			top: 0
+
+	a, h2, p
+		color: #fff
+		margin:
+			top: 0
+		font:
+			size: 14px
+
+	.btn
+		border: 1px solid #fff
+			radius: 4px
+		text-decoration: none
+		padding: 10px 
+		display: inline-block
+		margin-top: 20px
+
+
 .debug
 	.row
-		&:nth-child(1n)
+		&:nth-child(1n+1)
 			[class|="large"],
 			[class|="medium"],
 			[class|="small"]
@@ -32,7 +85,7 @@
 
 
 
-		&:nth-child(2n)
+		&:nth-child(2n+1)
 			[class|="large"],
 			[class|="medium"],
 			[class|="small"]
@@ -63,7 +116,7 @@
 
 
 
-		&:nth-child(3n)
+		&:nth-child(3n+1)
 			[class|="large"],
 			[class|="medium"],
 			[class|="small"]
@@ -93,7 +146,7 @@
 					background: #3cd2d3 
 
 
-		&:nth-child(4n)
+		&:nth-child(4n+1)
 			[class|="large"],
 			[class|="medium"],
 			[class|="small"]

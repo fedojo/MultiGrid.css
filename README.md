@@ -21,7 +21,7 @@ Initial grid with media queries + offsets(version BETA)
 	</tr>
 	<tr>
 		<td>
-			large-1of(1..10)
+			large-1of(1..16)
 		</td>
 		<td>
 			Column in desktop view
@@ -29,7 +29,7 @@ Initial grid with media queries + offsets(version BETA)
 	</tr>
 	<tr>
 		<td>
-			medium-1of(1..10)
+			medium-1of(1..16)
 		</td>
 		<td>
 			Column in tablet view
@@ -37,7 +37,7 @@ Initial grid with media queries + offsets(version BETA)
 	</tr>
 	<tr>
 		<td>
-			small-1of(1..10)
+			small-1of(1..16)
 		</td>
 		<td>
 			Column in mobile view
@@ -45,7 +45,7 @@ Initial grid with media queries + offsets(version BETA)
 	</tr>
 	<tr>
 		<td>
-			offset-large-1of(1..10)
+			offset-large-1of(1..16)
 		</td>
 		<td>
 			Offset in desktop view
@@ -53,7 +53,7 @@ Initial grid with media queries + offsets(version BETA)
 	</tr>
 	<tr>
 		<td>
-			offset-medium-1of(1..10)
+			offset-medium-1of(1..16)
 		</td>
 		<td>
 			Offset in tablet view
@@ -61,7 +61,7 @@ Initial grid with media queries + offsets(version BETA)
 	</tr>
 	<tr>
 		<td>
-			offset-small-1of(1..10)
+			offset-small-1of(1..16)
 		</td>
 		<td>
 			Offset in mobile view
@@ -83,6 +83,10 @@ Initial grid with media queries + offsets(version BETA)
 </table>
 
 ## Change log
+
+
+### 0.0.5 (4.05.2015)
+- Wrapper
 
 ### 0.0.4 (3.05.2015)
 - Medium and small offsets
