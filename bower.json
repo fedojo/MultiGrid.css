@@ -5,6 +5,12 @@
   "authors": [
     "piotrsikora <fedojo.com@gmail.com>"
   ],
+  "main": [
+    "src/sass/_mixins.sass",
+    "src/sass/_variables.sass",
+    "src/sass/_grid.sass",
+    "src/sass/style.scss"
+  ],
   "license": "MIT",
   "ignore": [
     "**/.*",
