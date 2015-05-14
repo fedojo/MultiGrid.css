@@ -56,7 +56,7 @@
 
 
 .row
-	&:after 
+	&:after
 		content: " "
 		visibility: hidden
 		display: block
@@ -69,7 +69,7 @@
 		left: $gridGutterSmall/2
 		right: $gridGutterSmall/2
 
-	float: left 
+	float: left
 
 [class|="medium"]
 	box-sizing: border-box
@@ -87,28 +87,10 @@
 
 	float: left
 
-@include buildGrid(2)
-@include buildGrid(3)
-@include buildGrid(4)
-@include buildGrid(5)
-@include buildGrid(6)
-@include buildGrid(7)
-@include buildGrid(8)
-@include buildGrid(9)
-@include buildGrid(10)
-@include buildGrid(11)
-@include buildGrid(12)
-@include buildGrid(13)
-@include buildGrid(14)
-@include buildGrid(15)
-@include buildGrid(16)
-
 .wrapper
-	max-width: 1200px
+	max-width: $wrapperMaxWidth
 	margin: 0 auto
 	padding: 0 $gridGutterLarge
 
 	&.b2b
 		padding: 0
-
-	

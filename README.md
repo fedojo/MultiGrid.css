@@ -10,20 +10,22 @@ Initial grid with media queries (large, medium, small) + offsets
 
 ## Usage
 You can easily use it with bower
+```
 	bower install git@github.com:fedojo/multigrid-css.git
+```
 
 Than in gulp you can extend your sass process with:
 ```javascript
-	gulp.task('sass', function() {
-	gulp
-	.src('./src/sass/*.scss')
-	.pipe(sass({
-		includePaths: [
-		'bower_components/MultiGrid.css/src/sass'
-		]
-	}))
-	.pipe(gulp.dest('./dist/css'))
-	});
+gulp.task('sass', function() {
+gulp
+.src('./src/sass/*.scss')
+.pipe(sass({
+	includePaths: [
+	'bower_components/MultiGrid.css/src/sass'
+	]
+}))
+.pipe(gulp.dest('./dist/css'))
+});
 ```
 
 Finally you will need to init SASS
@@ -40,6 +42,15 @@ If you want to overwrite settings file with your own
 @import "fedojo.grid";
 ```
 
+Then you can build grid in your sass file:
+```
+@include buildGrid(n) // Number of rows
+```
+
+Or include file with 2-16 grid:
+```css
+@import "fedojo.grid.build";
+```
 
 
 ## Usage columns/offsets in CSS
