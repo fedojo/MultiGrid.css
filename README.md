@@ -1,4 +1,4 @@
-# MultiGrid.css 
+# MultiGrid.css
 ## Grid with multidividers (2,3,4,5,6...n)
 Adding a new grid dividers with gutter for modern webbrowsers.
 
@@ -6,7 +6,40 @@ Adding a new grid dividers with gutter for modern webbrowsers.
 [http://dev.fedojo.com/multigrid.css/](http://dev.fedojo.com/multigrid.css/)
 
 ## Current state
-Initial grid with media queries + offsets(version BETA)
+Initial grid with media queries (large, medium, small) + offsets
+
+## Usage
+You can easily use it with bower
+	bower install git@github.com:fedojo/multigrid-css.git
+
+Than in gulp you can extend your sass process with:
+```javascript
+	gulp.task('sass', function() {
+	gulp
+	.src('./src/sass/*.scss')
+	.pipe(sass({
+		includePaths: [
+		'bower_components/MultiGrid.css/src/sass'
+		]
+	}))
+	.pipe(gulp.dest('./dist/css'))
+	});
+```
+
+Finally you will need to init SASS
+```css
+@import "breakpoint";
+@import "fedojo.grid.settings"; // This will import default settings
+@import "fedojo.grid";
+```
+
+If you want to overwrite settings file with your own
+```css
+@import "breakpoint";
+@import "here-your-settings-file"; // This will import default settings
+@import "fedojo.grid";
+```
+
 
 
 ## Usage columns/offsets in CSS
@@ -110,5 +143,3 @@ Initial grid with media queries + offsets(version BETA)
 
 ### 0.0.0 Init (17.05.2015)
 - Idea + initial code
-
-
